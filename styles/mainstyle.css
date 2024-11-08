@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sriracha&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans", serif;
+    font-optical-sizing: auto;    
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
+header {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#mobile-nav{
+    display: none;
+}
+
+#header-logo {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+#title {
+    display: inline-block;
+   
+
+}
+
+header>a {
+    text-decoration: none;
+    color:black;
+}
+
+.icon {
+    display: none; /* Hidden on larger screens */
+    font-size: 3rem;
+    cursor: pointer;
+    
+}
+
+@media (max-width: 540px) {
+    #nav{
+        display:none;
+    }
+    a.icon {
+        
+        display: block;
+       
+        
+        
+    }
+}
