@@ -10,6 +10,9 @@
 a {
     text-decoration: none;
 }
+ul {
+    list-style-type: none;
+}
 
 html,body {
     height: 100vh;
@@ -43,11 +46,10 @@ header {
 }
 
 #nav-list {
-    list-style-type: none;
-    display: flex;
     
+    display: flex;    
     justify-content: space-evenly;
-    flex-wrap: nowrap; /* Prevent wrapping */
+    flex-wrap: nowrap;
     gap: 1rem;
     
 }
@@ -103,12 +105,27 @@ p,h2,h3 {
     grid-column: 1;
 }
 
+#activities img {
+    width: 200px;
+    height: auto;
+}
+
+#activities section article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: beige;
+    border: 1px solid black;
+    margin: 1em;
+    width: 30%;
+}
+
 #images-activities {
     grid-column: 2;
 }
 
 
-
+/*TO Edit*/
 .button-34 {
     text-decoration: none;
   background: #5E5DF0;
@@ -205,11 +222,12 @@ footer {
    
 
     #nav {
-        display:none;
+        display:block;
         order: 1;
         text-align: center;
         align-self: center;
         width: 100%;
+        flex-shrink: 1;
     }
 
     #nav-list {
